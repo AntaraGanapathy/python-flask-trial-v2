@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trial Flask Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   
+  </head>
+  <body>
+    <div class = "container">
+      <img src="https://python-flask-trial--antaraganapathy.repl.co/static/flask_img1.png" height="100px" width="100%">
+      <h1 class="text-center mt-2 mb-4">Trial Flask Project</h1>
+    
+      <h2>About the project</h2>
+    
+      <p class="lead ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel augue sollicitudin, dictum purus at, dictum felis. Phasellus at elementum mi. Aliquam viverra est sed elit ullamcorper, et blandit ex suscipit. Morbi in ipsum ligula. Fusce imperdiet tincidunt rutrum. Integer sed luctus odio. Sed quis lectus ut lectus gravida ultricies et eu tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+      <h2>Future plan</h2>
+
+      <p>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </p>
+    </div>
+    
+  </body>
+</html>
